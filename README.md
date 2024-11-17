@@ -2,7 +2,7 @@
 
 ---
 
-## (Task Tracker CLI API)[https://github.com/eliasz130/backend-projects/tree/main/task-tracker]
+## [Task Tracker CLI API](https://github.com/eliasz130/backend-projects/tree/main/task-tracker)
 Start by running:
 
 ```
