@@ -19,8 +19,7 @@ export class TaskManager {
         if (fs.existsSync(this.fileName)) {
             const data = fs.readFileSync(this.fileName, 'utf-8');
             try {
-                const tasksJson: Task[] = JSON.parse(data);
-                this.tasks = tasksJson;
+                this.tasks = JSON.parse(data);
             } catch (err) {
                 console.error('Error parsing tasks JSON:', err);
                 this.tasks = [];
