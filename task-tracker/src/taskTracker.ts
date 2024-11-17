@@ -1,5 +1,5 @@
 import * as process from 'process';
-import { TaskManager } from './TaskManager';
+import {TaskManager} from './TaskManager';
 
 // Initialize task manager
 const taskManager = new TaskManager();

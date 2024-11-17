@@ -15,24 +15,6 @@ export class TaskManager {
         this.loadTasks();
     }
 
-    private loadTasks(): void {
-        if (fs.existsSync(this.fileName)) {
-            const data = fs.readFileSync(this.fileName, 'utf-8');
-            try {
-                this.tasks = JSON.parse(data);
-            } catch (err) {
-                console.error('Error parsing tasks JSON:', err);
-                this.tasks = [];
-            }
-        } else {
-            this.tasks = [];
-        }
-    }
-
-    private saveTasks(): void {
-        fs.writeFileSync(this.fileName, JSON.stringify(this.tasks, null, 2));
-    }
-
     public addTask(name: string, description: string): void {
         const newTask: Task = {
             id: this.tasks.length > 0 ? Math.max(...this.tasks.map(t => t.id)) + 1 : 1,
@@ -84,5 +66,23 @@ export class TaskManager {
                 console.log('---');
             });
         }
+    }
+
+    private loadTasks(): void {
+        if (fs.existsSync(this.fileName)) {
+            const data = fs.readFileSync(this.fileName, 'utf-8');
+            try {
+                this.tasks = JSON.parse(data);
+            } catch (err) {
+                console.error('Error parsing tasks JSON:', err);
+                this.tasks = [];
+            }
+        } else {
+            this.tasks = [];
+        }
+    }
+
+    private saveTasks(): void {
+        fs.writeFileSync(this.fileName, JSON.stringify(this.tasks, null, 2));
     }
 }

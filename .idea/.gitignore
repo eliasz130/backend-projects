@@ -1,0 +1,15 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+# Misc
+.idea
+node_modules
+task-tracker/package.json
+task-tracker/package-lock.json
+task-tracker/tsconfig.json
