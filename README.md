@@ -1,7 +1,5 @@
 ## Backend Projects (Mainly for Roadmap.sh)
 
----
-
 ## [Task Tracker CLI API](https://github.com/eliasz130/backend-projects/tree/main/task-tracker)
 Start by running:
 
@@ -27,3 +25,5 @@ npx ts-node src/taskTracker.ts list todo
 npx ts-node src/taskTracker.ts list in-progress
 ```
 For the [Roadmap.sh](https://roadmap.sh/projects/task-tracker) Task Tracker project
+
+---
