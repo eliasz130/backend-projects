@@ -1,6 +1,7 @@
 ## Backend Projects (Mainly for Roadmap.sh)
 
 ## [Task Tracker CLI API](https://github.com/eliasz130/backend-projects/tree/main/task-tracker)
+In Node and TS.
 Start by running:
 
 ```
