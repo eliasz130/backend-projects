@@ -1,5 +1,7 @@
 ## Task Tracker CLI API
 
+In Nodejs and TS, first backend project. Planning to go back to Python for now.
+
 Start by running:
 
 ```
