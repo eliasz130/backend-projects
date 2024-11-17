@@ -8,7 +8,7 @@ npx ts-node src/taskTracker.ts </br>
 ```
 
 ```
-npx ts-node src/taskTracker.ts add <"Task Name">
+npx ts-node ~/src/taskTracker.ts add <"Task Name"> <"Task Description">
 
 npx ts-node src/taskTracker.ts update <ID> <"New Task Name">
 npx ts-node src/taskTracker.ts delete <ID>
